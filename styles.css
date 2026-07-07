@@ -374,6 +374,16 @@ nav.main-nav a.active::after {
   max-width: 560px;
 }
 
+.hero-subhead--intro {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  opacity: 0.85;
+  border-left: 3px solid var(--gold);
+  padding-left: 0.875rem;
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
 .hero-actions-footer {
   width: 100%;
   margin-top: var(--spacing-lg);
@@ -913,6 +923,16 @@ nav.main-nav a.active::after {
 
 .about-story p {
   margin-bottom: 1.25rem;
+}
+
+.about-welcome-note {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.0625rem;
+  border-left: 3px solid var(--sage-green);
+  padding-left: 0.875rem;
+  margin-bottom: 1.5rem !important;
 }
 
 .about-official {
