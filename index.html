@@ -25,8 +25,7 @@
     <div class="container">
       <div class="header-wrap">
         <a href="#home" class="logo-container">
-          <img src="assets/logo.png" alt="Carers Community Circle Logo">
-          <span class="logo-text">Carers Community Circle</span>
+          <img src="assets/logotra.png" alt="Carers Community Circle Logo">
         </a>
         
         <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
@@ -56,15 +55,8 @@
       <div class="container">
         <div class="hero-layout">
           <div class="hero-content reveal">
-            <span class="hero-eyebrow">Carers Community Circle</span>
             <h1 class="hero-headline">A safe, welcoming space to feel seen, supported and understood.</h1>
             <p class="hero-subhead">Whether you're caring for a loved one or caring as your job, you don't have to do it alone. We bring carers together across Enfield, Hackney and Waltham Forest — for coffee, conversation, and real support.</p>
-            <div class="hero-ctas">
-              <a href="https://chat.whatsapp.com/H3jr8ayMcDTFWBiyEPUC3O" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i> Join our WhatsApp community
-              </a>
-              <a href="#offers" class="text-link">See what's on</a>
-            </div>
           </div>
           <div class="hero-visual">
             <div class="circle-motif-container">
@@ -78,11 +70,37 @@
                   <p class="invitation-loc">Rose Lipman, N1 5SQ</p>
                 </div>
               </div>
-              <a href="#featured-event" class="btn btn-secondary hero-featured-btn">
-                <i class="fas fa-calendar-alt"></i> View Featured Event & RSVP →
-              </a>
-              <div class="hero-tagline">Community • Wellbeing • Practical</div>
             </div>
+          </div>
+        </div>
+        
+        <!-- Parallel Actions and Hero Footer Tagline -->
+        <div class="hero-actions-footer reveal">
+          <div class="hero-ctas-row">
+            <div class="hero-ctas-group">
+              <a href="https://chat.whatsapp.com/H3jr8ayMcDTFWBiyEPUC3O" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> Join our WhatsApp community
+              </a>
+              <a href="#offers" class="btn btn-secondary">
+                <i class="fas fa-list"></i> See what's on
+              </a>
+            </div>
+            <div class="hero-ctas-divider" aria-hidden="true">|</div>
+            <div class="hero-ctas-group">
+              <a href="#featured-event" class="btn btn-primary">
+                <i class="fas fa-calendar-alt"></i> View Featured Event
+              </a>
+              <a href="https://chat.whatsapp.com/H3jr8ayMcDTFWBiyEPUC3O" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-check-circle"></i> RSVP
+              </a>
+            </div>
+          </div>
+          <div class="hero-footer-tagline">
+            <span>Community</span>
+            <span class="dot">•</span>
+            <span>Wellbeing</span>
+            <span class="dot">•</span>
+            <span>Practical</span>
           </div>
         </div>
       </div>
@@ -94,31 +112,36 @@
     <!-- Who We're For Section -->
     <section id="who-we-are" class="section">
       <div class="container">
-        <div class="section-header center-wrap reveal">
+        <div class="section-header reveal">
           <h2>Who We're For</h2>
           <p class="section-intro">Caring looks different for everyone. However you came to it, there's a place for you here.</p>
         </div>
         
-        <div class="audience-grid reveal">
-          <div class="audience-card">
-            <div class="card-icon"><i class="fas fa-heart"></i></div>
-            <h3>Unpaid carers</h3>
-            <p>Looking after a family member, partner or friend who needs support.</p>
+        <div class="who-we-are-layout reveal">
+          <div class="audience-grid">
+            <div class="audience-card">
+              <div class="card-icon"><i class="fas fa-heart"></i></div>
+              <h3>Unpaid carers</h3>
+              <p>Looking after a family member, partner or friend who needs support.</p>
+            </div>
+            <div class="audience-card">
+              <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+              <h3>Paid carers</h3>
+              <p>Care workers, personal assistants and home care staff who do this vital work as a job.</p>
+            </div>
+            <div class="audience-card">
+              <div class="card-icon"><i class="fas fa-child"></i></div>
+              <h3>Parent carers & SEND families</h3>
+              <p>Raising a child with special educational needs and additional disabilities.</p>
+            </div>
+            <div class="audience-card">
+              <div class="card-icon"><i class="fas fa-hand-holding-medical"></i></div>
+              <h3>Referrers</h3>
+              <p>Social workers, GPs and care agencies who want to point someone in the right direction.</p>
+            </div>
           </div>
-          <div class="audience-card">
-            <div class="card-icon"><i class="fas fa-briefcase"></i></div>
-            <h3>Paid carers</h3>
-            <p>Care workers, personal assistants and home care staff who do this vital work as a job.</p>
-          </div>
-          <div class="audience-card">
-            <div class="card-icon"><i class="fas fa-child"></i></div>
-            <h3>Parent carers & SEND families</h3>
-            <p>Raising a child with special educational needs and additional disabilities.</p>
-          </div>
-          <div class="audience-card">
-            <div class="card-icon"><i class="fas fa-hand-holding-medical"></i></div>
-            <h3>Referrers</h3>
-            <p>Social workers, GPs and care agencies who want to point someone in the right direction.</p>
+          <div class="who-we-are-image-container">
+            <img src="assets/who-we-are-image.png" alt="Multi-generational caring support showing a diverse young carer supporting an elder" class="section-side-image">
           </div>
         </div>
         
@@ -138,6 +161,9 @@
             <h2>Our Story</h2>
             <p>Carers Community Circle started with a simple idea: caring can be isolating, and no one should have to carry it alone. We bring people together — over coffee, on a walk, in a workshop, or online — to share the load, swap knowledge, and remind each other that support is close by.</p>
             <p>We support people from all cultural, ethnic, religious and socio-economic backgrounds, including unpaid and paid carers, vulnerable adults, older people, people experiencing mental health difficulties, loneliness or isolation, and families across Hackney and the surrounding boroughs — in person and online, wherever you're based.</p>
+            <div class="about-story-image-wrap">
+              <img src="assets/carer-men.png" alt="Two carers sitting together having coffee and exchanging ideas" class="about-story-image">
+            </div>
           </div>
           <div class="about-official reveal">
             <h3>Who we are, officially</h3>
@@ -216,51 +242,58 @@
         
         <!-- Flyer styled Event Callout -->
         <div id="featured-event" class="event-flyer reveal">
-          <div class="event-flyer-header">
-            <span class="event-flyer-eyebrow"><i class="fas fa-calendar-day"></i> Featured Event</span>
-          </div>
-          <h3 class="event-flyer-title">☕ Coffee Morning Workshop</h3>
-          <p class="event-flyer-tagline">A relaxed morning of workshop, conversation and connection over coffee. You are warmly welcome.</p>
-          
-          <div class="event-details-grid">
-            <div class="event-detail-item">
-              <div class="event-detail-icon"><i class="far fa-calendar-alt" style="color: var(--sage-green-dark)"></i></div>
-              <div class="event-detail-text">
-                <strong>Date</strong>
-                Tuesday, 28th July 2026
+          <div class="event-flyer-layout">
+            <div class="event-flyer-content">
+              <div class="event-flyer-header">
+                <span class="event-flyer-eyebrow"><i class="fas fa-calendar-day"></i> Featured Event</span>
+              </div>
+              <h3 class="event-flyer-title">☕ Coffee Morning Workshop</h3>
+              <p class="event-flyer-tagline">A relaxed morning of workshop, conversation and connection over coffee. You are warmly welcome.</p>
+              
+              <div class="event-details-grid">
+                <div class="event-detail-item">
+                  <div class="event-detail-icon"><i class="far fa-calendar-alt" style="color: var(--sage-green-dark)"></i></div>
+                  <div class="event-detail-text">
+                    <strong>Date</strong>
+                    Tuesday, 28th July 2026
+                  </div>
+                </div>
+                
+                <div class="event-detail-item">
+                  <div class="event-detail-icon"><i class="far fa-clock" style="color: var(--sage-green-dark)"></i></div>
+                  <div class="event-detail-text">
+                    <strong>Time</strong>
+                    12:00pm — 2:00pm
+                  </div>
+                </div>
+                
+                <div class="event-detail-item">
+                  <div class="event-detail-icon"><i class="fas fa-map-marker-alt" style="color: var(--sage-green-dark)"></i></div>
+                  <div class="event-detail-text">
+                    <strong>Location</strong>
+                    Rose Lipman, 43 De Beauvoir Road, London, N1 5SQ
+                  </div>
+                </div>
+                
+                <div class="event-detail-item">
+                  <div class="event-detail-icon"><i class="fas fa-mug-hot" style="color: var(--sage-green-dark)"></i></div>
+                  <div class="event-detail-text">
+                    <strong>Hospitality</strong>
+                    Coffee, tea and light bites provided free of charge
+                  </div>
+                </div>
+              </div>
+              
+              <div class="event-flyer-ctas">
+                <a href="https://chat.whatsapp.com/H3jr8ayMcDTFWBiyEPUC3O" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp"></i> RSVP via WhatsApp Group
+                </a>
+                <a href="#contact" class="btn btn-secondary">Email to Register</a>
               </div>
             </div>
-            
-            <div class="event-detail-item">
-              <div class="event-detail-icon"><i class="far fa-clock" style="color: var(--sage-green-dark)"></i></div>
-              <div class="event-detail-text">
-                <strong>Time</strong>
-                12:00pm — 2:00pm
-              </div>
+            <div class="event-flyer-image-wrap">
+              <img src="assets/cups-cards.jpg" alt="Carers Community Circle Mug and Cards" class="event-flyer-image">
             </div>
-            
-            <div class="event-detail-item">
-              <div class="event-detail-icon"><i class="fas fa-map-marker-alt" style="color: var(--sage-green-dark)"></i></div>
-              <div class="event-detail-text">
-                <strong>Location</strong>
-                Rose Lipman, 43 De Beauvoir Road, London, N1 5SQ
-              </div>
-            </div>
-            
-            <div class="event-detail-item">
-              <div class="event-detail-icon"><i class="fas fa-mug-hot" style="color: var(--sage-green-dark)"></i></div>
-              <div class="event-detail-text">
-                <strong>Hospitality</strong>
-                Coffee, tea and light bites provided free of charge
-              </div>
-            </div>
-          </div>
-          
-          <div class="event-flyer-ctas">
-            <a href="https://chat.whatsapp.com/H3jr8ayMcDTFWBiyEPUC3O" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-whatsapp"></i> RSVP via WhatsApp Group
-            </a>
-            <a href="#contact" class="btn btn-secondary">Email to Register</a>
           </div>
         </div>
       </div>
@@ -269,10 +302,12 @@
     <!-- Wellbeing Support Section -->
     <section id="wellbeing" class="section">
       <div class="container">
-        <div class="section-header reveal">
-          <h2>Wellbeing Support</h2>
-          <p class="section-intro">Support doesn't stop at our events. Here's where else you can turn.</p>
-        </div>
+        <div class="wellbeing-layout">
+          <div class="wellbeing-main">
+            <div class="section-header reveal">
+              <h2>Wellbeing Support</h2>
+              <p class="section-intro">Support doesn't stop at our events. Here's where else you can turn.</p>
+            </div>
         
         <div class="signposting-grid reveal">
           <div class="signposting-card">
@@ -298,7 +333,12 @@
             </div>
             <a href="https://www.autism.org.uk/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Visit site</a>
           </div>
-        </div>
+        </div><!-- /signposting-grid -->
+          </div><!-- /wellbeing-main -->
+          <div class="wellbeing-image-container reveal">
+            <img src="assets/wellbeing-image.png" alt="Carers taking a wellbeing walk together" class="section-side-image">
+          </div>
+        </div><!-- /wellbeing-layout -->
         
         <!-- Crisis Support Box -->
         <div class="crisis-box reveal">
@@ -332,10 +372,15 @@
     <!-- Get Involved Section -->
     <section id="get-involved" class="section">
       <div class="container">
-        <div class="section-header reveal">
-          <h2>Get Involved</h2>
-          <p class="section-intro">There are lots of ways to be part of the Circle.</p>
-        </div>
+        <div class="get-involved-layout">
+          <div class="get-involved-image-container reveal">
+            <img src="assets/get-involved-image.png" alt="Carers gathering for a community coffee morning" class="section-side-image">
+          </div>
+          <div class="get-involved-main">
+            <div class="section-header reveal" style="text-align: left;">
+              <h2>Get Involved</h2>
+              <p class="section-intro">There are lots of ways to be part of the Circle.</p>
+            </div>
         
         <div class="get-involved-grid reveal">
           <div class="involvement-card">
@@ -369,7 +414,9 @@
             </div>
             <a href="#contact" class="btn btn-secondary">Contact us →</a>
           </div>
-        </div>
+        </div><!-- /get-involved-grid -->
+          </div><!-- /get-involved-main -->
+        </div><!-- /get-involved-layout -->
         
         <!-- Instagram Link Box -->
         <div class="instagram-cta reveal">
