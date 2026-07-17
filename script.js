@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Header Scroll State
   const header = document.getElementById('siteHeader');
   const scrollToTopBtn = document.getElementById('scrollToTop');
+  const scrollProgress = document.getElementById('scrollProgress');
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -38,6 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       header.classList.remove('scrolled');
       if (scrollToTopBtn) scrollToTopBtn.classList.remove('show');
+    }
+
+    // Update Scroll Progress Bar
+    if (scrollProgress) {
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalScroll > 0) {
+        const percentage = (window.scrollY / totalScroll) * 100;
+        scrollProgress.style.width = `${percentage}%`;
+      } else {
+        scrollProgress.style.width = '0%';
+      }
     }
   });
 
@@ -134,8 +146,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('formMessage').value.trim();
       const consent = document.getElementById('formConsent').checked;
 
+      // Validate reCAPTCHA
+      const recaptchaResponse = typeof grecaptcha !== 'undefined' ? grecaptcha.getResponse() : '';
+
       if (!name || !email || !role || !message || !consent) {
         alert('Please fill out all fields and accept the privacy consent checkbox.');
+        return;
+      }
+
+      if (!recaptchaResponse) {
+        alert('Please complete the \'I am not a robot\' check before sending your message.');
         return;
       }
 
@@ -175,6 +195,8 @@ document.addEventListener('DOMContentLoaded', () => {
       successDiv.querySelector('.btn-reset-form').addEventListener('click', () => {
         successDiv.remove();
         contactForm.reset();
+        // Reset reCAPTCHA widget on form reset
+        if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
         contactForm.style.display = 'block';
       });
     });
