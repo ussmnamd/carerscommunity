@@ -675,9 +675,9 @@ nav.main-nav a.active::after {
 /* Get Involved layout with side image */
 .get-involved-layout {
   display: grid;
-  grid-template-columns: 0.4fr 1.6fr;
-  gap: var(--spacing-lg);
-  align-items: start;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: var(--spacing-xl);
+  align-items: center;
 }
 
 .get-involved-main {
@@ -687,19 +687,25 @@ nav.main-nav a.active::after {
 .get-involved-image-container {
   border-radius: var(--border-radius-md);
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(45, 34, 53, 0.14);
-  border: 4px solid rgba(255,255,255,0.8);
-  aspect-ratio: 2 / 3;
+  box-shadow: 0 12px 40px rgba(45, 34, 53, 0.16);
+  border: 4px solid rgba(255,255,255,0.85);
   position: sticky;
-  top: 100px;
+  top: 120px;
   isolation: isolate;
+}
+
+.get-involved-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .get-involved-image-container::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(45,34,53,0.22) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(45,34,53,0.15) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -1616,16 +1622,32 @@ footer.site-footer::before {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-bottom: var(--spacing-lg);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: var(--spacing-lg);
 }
 
+/* Stacked logo: image above brand name */
+.logo-container--stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.logo-container--stacked .logo-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
 .footer-logo img {
-  height: 64px;
+  height: 68px;
   width: auto;
   opacity: 0.95;
+  display: block;
 }
 
 .footer-tagline {
